@@ -1,0 +1,4 @@
+代码拉取完成后：
+1、配置maven
+2、执行SQL文件，配置jdbc连接配置
+3、将项目先clean在install之后启动
