@@ -54,6 +54,7 @@ public class OrderController {
         }
 
         //查询当前用户的收货地址
+        System.out.println("123");
         AddressExample addressExample = new AddressExample();
         addressExample.or().andUseridEqualTo(user.getUserid());
         List<Address> addressList = addressService.getAllAddressByExample(addressExample);

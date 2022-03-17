@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>网上购物商城系统</title>
+    <title>长理商城</title>
     <script src="${pageContext.request.contextPath}/js/jquery.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap/css/bootstrap.min.css">
@@ -623,7 +623,7 @@
         </c:if>
     </div>
 </div>
-<div class="button">欢迎加入软通动力大家庭，让我们共同进步</div>
+<div class="button">欢迎报考长沙理工大学</div>
 </body>
 </html>
 
