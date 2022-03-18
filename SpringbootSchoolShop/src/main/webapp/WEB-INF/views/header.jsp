@@ -40,7 +40,7 @@
                 购物车
             </a></li>
             <li><a href="${pageContext.request.contextPath}/info/favorite"> <i
-                    class="fa fa-star"></i> 收藏夹
+                    class="fa fa-star"></i> 个人中心
             </a></li>
         </ul>
     </div>

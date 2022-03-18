@@ -621,9 +621,57 @@
                 </div>
             </div>
         </c:if>
+
+        <c:if test="${!empty othersGoods}">
+            <div class="module">
+                <div class="hd">
+                    <h2>其他</h2>
+                    <hr>
+                </div>
+
+                <div class="bd">
+                    <div class="data">
+                        <ul>
+                            <c:forEach items="${othersGoods}" var="othersgoods">
+                                <li class="data-item-li">
+                                    <div class="to-big">
+                                        <a href="${pageContext.request.contextPath}/detail?goodsid=${othersgoods.goodsid}"> <img
+                                                src="${pageContext.request.contextPath}/pictures/${othersgoods.imagePaths[0].path}" alt=""
+                                                width="200" height="200">
+                                        </a>
+                                    </div>
+                                    <p class="text-right">
+                                        <a href="${pageContext.request.contextPath}/detail?goodsid=${othersgoods.goodsid}">${othersgoods.goodsname}</a>
+                                    </p>
+                                    <div class="text-right">
+                                        <b>￥${othersgoods.price}</b>
+                                    </div>
+                                    <div>
+                                        <c:if test="${othersgoods.fav}">
+                                            <button
+                                                    class="like-button glyphicon glyphicon-heart btn btn-default"
+                                                    data-id="${othersgoods.goodsid}"
+                                                    style="display: none;"></button>
+                                        </c:if>
+                                        <c:if test="${!othersgoods.fav}">
+                                            <button
+                                                    class="like-button glyphicon glyphicon-heart-empty btn btn-default"
+                                                    data-id="${othersgoods.goodsid}"
+                                                    style="display: none;"></button>
+                                        </c:if>
+                                    </div>
+                                </li>
+                            </c:forEach>
+
+                            <div class="clear-float" style="clear: both;"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </c:if>
     </div>
 </div>
-<div class="button">欢迎报考长沙理工大学</div>
+<div class="button"></div>
 </body>
 </html>
 

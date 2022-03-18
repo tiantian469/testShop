@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
 
     $("#oldPsw").blur(function (){
-        if ($("#oldPsw").val()!=$("#Psw").attr("Psw"))
+        if ($("#oldPsw").val() != $("#oldPassword").val())
         {
             $("#oldPswError").show();
         }

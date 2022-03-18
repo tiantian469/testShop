@@ -76,6 +76,9 @@ public class MainController {
         //书籍
         List<Goods> bookGoods = getCateGoods("书籍", userid);
         model.addAttribute("bookGoods", bookGoods);
+        //其他
+        List<Goods> othersGoods = getCateGoods("其他", userid);
+        model.addAttribute("othersGoods", othersGoods);
 
         return "main";
     }

@@ -1,9 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: zhangxin
-  Date: 2019/5/13
-  Time: 15:45
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <!--
@@ -134,6 +128,7 @@ limitations under the License
                     <div class="form-group">
                         <label for="oldPsw" class="col-sm-2 control-label">旧密码</label>
                         <div class="col-sm-9">
+                            <input type="hidden" id="oldPassword" value="${user.getPassword()}">
                             <input type="password" class="form-control" name="oldPsw" id="oldPsw">
                         </div>
                     </div>
@@ -214,7 +209,7 @@ limitations under the License
             <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/information"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>个人信息</a>
             <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/list"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>订单管理</a>
             <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/address"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>地址管理</a>
-            <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/favorite"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>我的收藏</a>
+            <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/favorite"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>个人中心</a>
         </nav>
     </div>
     <main class="mdl-layout__content mdl-color--grey-100">
