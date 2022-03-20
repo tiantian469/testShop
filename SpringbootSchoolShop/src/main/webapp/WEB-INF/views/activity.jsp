@@ -61,7 +61,7 @@
                     <table id="goodsinfo" class="table table-striped table-bordered templatemo-user-table">
                         <thead>
                         <tr>
-                            <td><a href="" class="white-text templatemo-sort-by">id<span class="caret"></span></a></td>
+                            <td><a href="" class="white-text templatemo-sort-by">序号<span class="caret"></span></a></td>
                             <td><a href="" class="white-text templatemo-sort-by">活动名<span class="caret"></span></a></td>
                             <td><a href="" class="white-text templatemo-sort-by">活动描述<span class="caret"></span></a></td>
                             <td><a href="" class="white-text templatemo-sort-by">折扣<span class="caret"></span></a></td>

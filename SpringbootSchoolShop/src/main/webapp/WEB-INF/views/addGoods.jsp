@@ -57,11 +57,11 @@
                     <div class="row form-group">
                         <div class="col-lg-6 form-group">
                             <label class="control-label" for="inputWithWarning">价格</label>
-                            <input type="number" class="form-control" id="inputWithWarning" name="price">
+                            <input type="number" class="form-control" id="inputWithWarning" name="price" maxlength="9" min="0">
                         </div>
                         <div class="col-lg-6 form-group">
                             <label class="control-label" for="inputWithError">数量</label>
-                            <input type="number" class="form-control" id="inputWithError" name="num">
+                            <input type="number" class="form-control" id="inputWithError" name="num" min="0">
                         </div>
                     </div>
                     <div class="row form-group">

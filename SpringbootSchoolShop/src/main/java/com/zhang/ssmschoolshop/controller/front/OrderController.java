@@ -42,9 +42,6 @@ public class OrderController {
     @Autowired
     private ActivityService activityService;
 
-    @Autowired
-    private EmailService emailService;
-
     @RequestMapping("/order")
     public String showOrder(HttpSession session, Model model) {
 
@@ -146,8 +143,6 @@ public class OrderController {
         for (ShopCart cart : shopCart) {
             orderService.insertOrderItem(new OrderItem(null, orderId, cart.getGoodsid(), cart.getGoodsnum()));
         }
-        // 购买成功通知管理员
-        emailService.sendEmailToAdmin();
         return Msg.success("购买成功");
     }
 

@@ -114,7 +114,7 @@ public class GoodsController {
         /*goods.setCategory(1);*/
         goods.setUptime(new Date());
         goods.setActivityid(1);
-        goodsService.addGoods(goods);
+        Integer addGoods = goodsService.addGoods(goods);
         for (MultipartFile multipartFile : fileToUpload) {
             String fileName = goods.getGoodsname()+ multipartFile.getOriginalFilename();
             if (multipartFile != null) {
@@ -125,8 +125,9 @@ public class GoodsController {
 
             }
         }
-
-        redirectAttributes.addFlashAttribute("succeseMsg", "商品添加成功!");
+        if (addGoods > 0){
+            redirectAttributes.addFlashAttribute("succeseMsg", "商品添加成功!");
+        }
 
         return "redirect:/admin/goods/add";
     }
