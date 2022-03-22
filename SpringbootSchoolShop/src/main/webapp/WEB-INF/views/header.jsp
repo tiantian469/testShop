@@ -39,8 +39,8 @@
                     class="fa fa-shopping-cart" style="color: #F22E00"></i>
                 购物车
             </a></li>
-            <li><a href="${pageContext.request.contextPath}/info/favorite"> <i
-                    class="fa fa-star"></i> 个人中心
+            <li><a href="${pageContext.request.contextPath}/information"> <i
+                    class="fa"></i> 个人中心
             </a></li>
         </ul>
     </div>
@@ -66,7 +66,7 @@
                  id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a class="a-color" href="${pageContext.request.contextPath}/main">首页</a></li>
-                    <li><a class="a-color" href="${pageContext.request.contextPath}/information">个人信息</a></li>
+                    <%--<li><a class="a-color" href="${pageContext.request.contextPath}/information">个人信息</a></li>
                     <li class="dropdown"><a class="a-color" href="${pageContext.request.contextPath}/info/list"
                                             class="dropdown-toggle" data-toggle="dropdown" role="button"
                                             aria-haspopup="true" aria-expanded="false">我的订单 <span
@@ -75,7 +75,7 @@
                             <li><a href="${pageContext.request.contextPath}/info/address">地址管理</a></li>
                             <li><a href="${pageContext.request.contextPath}/order">交易中</a></li>
                             <li role="separator" class="divider"></li>
-                        </ul></li>
+                        </ul></li>--%>
                 </ul>
 
                 <form class="navbar-form navbar-right" role="search" method="get" action="${pageContext.request.contextPath}/search">

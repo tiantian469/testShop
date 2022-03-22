@@ -147,7 +147,7 @@
             <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/information"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>个人信息</a>
             <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/list"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>订单管理</a>
             <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/address"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>地址管理</a>
-            <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/favorite"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>个人中心</a>
+            <a class="mdl-navigation__link" href="${pageContext.request.contextPath}/info/favorite"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>我的收藏</a>
         </nav>
     </div>
     <main class="mdl-layout__content mdl-color--grey-100">
@@ -186,10 +186,10 @@
                             </ul>
                         </div>
                         <div class="row page-div">
-                            <div class="col-md-5 page-info">
+                            <div class="col-md-5 page-info" style="margin: 0 auto">
                                 当前第${pageInfo.pageNum}页，共${pageInfo.pages}页，总共${pageInfo.size}条记录
                             </div>
-                            <div class="col-md-6">
+                            <%--<div class="col-md-6">
                                 <nav aria-label="Page navigation">
                                     <ul class="pagination pagination-lg">
 
@@ -236,7 +236,7 @@
 
                                     </ul>
                                 </nav>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                 </div>
