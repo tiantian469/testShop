@@ -8,7 +8,6 @@ import com.zhang.ssmschoolshop.service.AddressService;
 import com.zhang.ssmschoolshop.service.GoodsService;
 import com.zhang.ssmschoolshop.service.OrderService;
 import com.zhang.ssmschoolshop.service.UserService;
-import com.zhang.ssmschoolshop.util.Md5Util;
 import com.zhang.ssmschoolshop.util.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -42,7 +41,7 @@ public class CustomerController {
     @RequestMapping("/registerresult")
     public String registerResult(User user, Model registerResult) {
         List<User> userList = new ArrayList<>();
-        user.setPassword(Md5Util.MD5Encode(user.getPassword(), "utf-8"));
+        user.setPassword(user.getPassword());
         UserExample userExample = new UserExample();
         userExample.or().andUsernameLike(user.getUsername());
         userList = userService.selectByExample(userExample);
@@ -62,7 +61,7 @@ public class CustomerController {
     public String loginConfirm(User user, Model loginResult, HttpServletRequest request, @RequestParam("confirmlogo") String confirmlogo) {
         System.out.println("传进来的用户帐号和密码为:" + user);
         //进行用户密码MD5加密验证
-        user.setPassword(Md5Util.MD5Encode(user.getPassword(), "UTF-8"));
+        user.setPassword(user.getPassword());
         HttpSession session = request.getSession();
         String verificationCode = (String) session.getAttribute("certCode");
         if (!confirmlogo.equals(verificationCode)) {
@@ -284,7 +283,7 @@ public class CustomerController {
     public Msg savePsw(String Psw, HttpServletRequest request) {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-        user.setPassword(Md5Util.MD5Encode(Psw, "UTF-8"));
+        user.setPassword(Psw);
         userService.updateByPrimaryKeySelective(user);
         return Msg.success("修改密码成功");
     }

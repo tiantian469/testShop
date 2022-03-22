@@ -3,7 +3,6 @@ package com.zhang.ssmschoolshop.controller.admin;
 
 import com.zhang.ssmschoolshop.entity.Admin;
 import com.zhang.ssmschoolshop.service.AdminService;
-import com.zhang.ssmschoolshop.util.Md5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,7 +25,7 @@ public class LoginController {
 
     @RequestMapping("/confirmLogin")
     public String confirmLogin(Admin admin, Model model, HttpServletRequest request) {
-        admin.setPassword(Md5Util.MD5Encode(admin.getPassword(),"utf-8"));
+        admin.setPassword(admin.getPassword());
         Admin selectAdmin = adminService.selectByName(admin);
         if (selectAdmin == null) {
             model.addAttribute("errorMsg", "用户名或密码错误");
