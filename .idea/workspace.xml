@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b183929f-2082-485b-85c9-f94d406b2a7f" name="Default Changelist" comment="15,14,13,12">
+    <list default="true" id="b183929f-2082-485b-85c9-f94d406b2a7f" name="Default Changelist" comment="11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/java/com/zhang/ssmschoolshop/controller/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/java/com/zhang/ssmschoolshop/controller/admin/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/java/com/zhang/ssmschoolshop/controller/front/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/java/com/zhang/ssmschoolshop/controller/front/CustomerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,7 +379,7 @@
       <workItem from="1647582925446" duration="816000" />
       <workItem from="1647585265850" duration="5795000" />
       <workItem from="1647597925253" duration="264000" />
-      <workItem from="1647935308936" duration="1066000" />
+      <workItem from="1647935308936" duration="1967000" />
     </task>
     <task id="LOCAL-00001" summary="V1.2增加新功能特性">
       <created>1627105452192</created>
@@ -418,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647591045081</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="11">
+      <created>1647936400789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647936400789</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -503,7 +508,8 @@
     <MESSAGE value="配置文件更新" />
     <MESSAGE value="更新" />
     <MESSAGE value="15,14,13,12" />
-    <option name="LAST_COMMIT_MESSAGE" value="15,14,13,12" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/1231.txt" />
