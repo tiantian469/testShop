@@ -2,3 +2,5 @@
 1、配置maven
 2、执行SQL文件，配置jdbc连接配置
 3、将项目先clean在install之后启动
+
+宣传宣传政策秩序册
