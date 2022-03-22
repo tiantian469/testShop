@@ -29,16 +29,16 @@ $(document).ready(function() {
             username: "用户名不能为空",
             telephone: "联系电话不能为空",
             email: {
-				required: "邮箱输入不能为空",
+				required: "邮箱不能为空",
 				email: "请输入一个正确的邮箱",
 			},
             password: {
-				required: "密码输入不能为空",
+				required: "密码不能为空",
 				minlength: "密码长度不能小于8位",
 			},
 			confirmPassword: {
-				required: "输入不能为空",
-				minlength: "密码长度不能小于8位",
+				required: "确认密码不能为空",
+				minlength: "确认密码长度不能小于8位",
 				equalTo: "两次密码输入不一致",
 			}
 		}
