@@ -131,6 +131,15 @@ public class OrderController {
         //删除购物车
         for (ShopCart cart : shopCart) {
             shopCartService.deleteByKey(new ShopCartKey(cart.getUserid(), cart.getGoodsid()));
+            //更新商品数量
+            int goodsNum = cart.getGoodsnum();
+            int goodsId = cart.getGoodsid();
+            Goods goods = goodsService.selectById(goodsId);
+            goodsNum = goods.getNum() - goodsNum;
+            Goods goods2 = new Goods();
+            goods2.setGoodsid(goodsId);
+            goods2.setNum(goodsNum);
+            goodsService.updateGoodsById(goods2);
         }
 
         //把订单信息写入数据库
@@ -143,6 +152,7 @@ public class OrderController {
         for (ShopCart cart : shopCart) {
             orderService.insertOrderItem(new OrderItem(null, orderId, cart.getGoodsid(), cart.getGoodsnum()));
         }
+        //删除数量
         return Msg.success("购买成功");
     }
 
