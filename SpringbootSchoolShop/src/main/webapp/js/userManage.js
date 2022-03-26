@@ -77,7 +77,7 @@ function build_user_table(path,result) {
             .append(username)
             .append(email)
             .append(telephone)
-            .append(deleteTd).appendTo("#goodsinfo tbody");
+            .appendTo("#goodsinfo tbody");
     })
 }
 

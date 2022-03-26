@@ -1,10 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: zhangxin
-  Date: 2019/5/13
-  Time: 15:45
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
@@ -93,19 +87,19 @@
                     <div class="form-group">
                         <label for="detailaddress" class="col-sm-2 control-label">详细地址</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="detailaddress" id="detailaddress"/>
+                            <input type="text" class="form-control" name="detailaddress" id="detailaddress" required="true"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">收货人</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="name" id="name">
+                            <input type="text" class="form-control" name="name" id="name" required="true">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="telephone" class="col-sm-2 control-label">手机号</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="telephone" id="telephone">
+                            <input type="text" class="form-control" name="telephone" id="telephone" required="true">
                         </div>
                     </div>
                 </form>
@@ -140,19 +134,19 @@
                     <div class="form-group">
                         <label for="detailaddress" class="col-sm-2 control-label">详细地址</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="detailaddressInsert" id="detailaddressInsert"/>
+                            <input type="text" class="form-control" name="detailaddressInsert" id="detailaddressInsert" required="true"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">收货人</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="nameInsert" id="nameInsert">
+                            <input type="text" class="form-control" name="nameInsert" id="nameInsert" required="true">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="telephone" class="col-sm-2 control-label">手机号</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="telephoneInsert" id="telephoneInsert">
+                            <input type="text" class="form-control" name="telephoneInsert" id="telephoneInsert" required="true">
                         </div>
                     </div>
                 </form>

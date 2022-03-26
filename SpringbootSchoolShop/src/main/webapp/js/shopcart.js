@@ -128,7 +128,7 @@ function build_cart_table(result) {
             var goodsprice = $("<td></td>").addClass("product-price")
                 .append($("<span></span>").addClass("amount-list amount-list-2").append("￥"+item.price));
 
-            var numIput = $("<input/>").addClass("num").attr("type","number").attr("value",item.num);
+            var numIput = $("<input/>").addClass("num").attr("type","number").attr("value",item.num).attr("min","1");
 
             var num = $("<td></td>").addClass("product-stock-status")
                 .append($("<div></div>").addClass("latest_es_from_2")

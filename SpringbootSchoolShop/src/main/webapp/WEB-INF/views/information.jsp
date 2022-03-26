@@ -89,19 +89,19 @@ limitations under the License
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">昵称</label>
                         <div class="col-sm-9">
-                            <div  name="name" id="name"></div>
+                            <input type="text" class="form-control" name="name" id="name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email" class="col-sm-2 control-label">邮箱</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="email" id="email">
+                            <input type="text" class="form-control" name="email" id="email" required="true">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="telephone" class="col-sm-2 control-label">手机号</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="telephone" name="telephone">
+                            <input type="text" class="form-control" id="telephone" name="telephone" required="true">
                         </div>
                     </div>
                 </form>
@@ -189,7 +189,7 @@ limitations under the License
         <header class="demo-drawer-header">
            <%-- <img src="images/user.jpg" class="demo-avatar">--%>
             <div class="demo-avatar-dropdown">
-                <h1>用户后台管理</h1>
+                <h1>个人中心</h1>
                <%-- <span>hello@example.com</span>--%>
                 <div class="mdl-layout-spacer">
                 </div>
