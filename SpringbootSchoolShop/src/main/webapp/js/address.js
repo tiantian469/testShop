@@ -38,6 +38,18 @@ $(document).ready(function (){
                 }
             }
         });
+        if ($("#detailaddress").val() == ""){
+            alert("详细地址输入不能为空！")
+            return false;
+        }
+        if ($("#name").val() == ""){
+           alert("收货人输入不能为空！")
+            return false;
+        }
+        if ($("#telephone").val() == ""){
+            alert("手机号输入不能为空！")
+            return false;
+        }
         var saveAddr={};
         saveAddr.addressid=addresId;
          saveAddr.province=$("#provinceUpdate").val();
@@ -125,6 +137,18 @@ $(document).ready(function (){
                 }
             }
         });
+        if ($("#detailaddressInsert").val() == ""){
+            alert("详细地址输入不能为空！")
+            return false;
+        }
+        if ($("#nameInsert").val() == ""){
+            alert("收货人输入不能为空！")
+            return false;
+        }
+        if ($("#telephoneInsert").val() == ""){
+            alert("手机号输入不能为空！")
+            return false;
+        }
         var insertAddr={};
         insertAddr.addressid={};
         insertAddr.userid={};

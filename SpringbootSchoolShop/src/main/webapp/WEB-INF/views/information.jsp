@@ -91,19 +91,19 @@ limitations under the License
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">昵称</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="name" id="name">
+                            <input type="text" class="form-control" name="name" id="name" readonly>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email" class="col-sm-2 control-label">邮箱</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="email" id="email" required="true">
+                            <input type="text" class="form-control" name="email" id="email" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="telephone" class="col-sm-2 control-label">手机号</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="telephone" name="telephone" required="true">
+                            <input type="text" class="form-control" id="telephone" name="telephone" required>
                         </div>
                     </div>
                 </form>

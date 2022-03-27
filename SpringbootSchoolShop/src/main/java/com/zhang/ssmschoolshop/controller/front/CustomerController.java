@@ -109,7 +109,7 @@ public class CustomerController {
         userid = user.getUserid();
         userExample.or().andUsernameEqualTo(name);
         userList = userService.selectByExample(userExample);
-        if (userList.isEmpty()) {
+        if (!userList.isEmpty()) {
             updateUser.setUserid(userid);
             updateUser.setUsername(name);
             updateUser.setEmail(email);

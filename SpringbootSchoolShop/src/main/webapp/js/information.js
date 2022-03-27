@@ -30,6 +30,12 @@ $(document).ready(function(){
 
 
     $("#saveInfo").click(function (){
+        if ($("#email").val() == ""){
+            alert("邮箱输入不能为空！")
+        }
+        if ($("#telephone").val() == ""){
+            alert("手机号输入不能为空！")
+        }
         var saveInfo={};
         saveInfo.name=$("#name").val();
         saveInfo.email=$("#email").val();
