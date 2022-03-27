@@ -26,6 +26,8 @@
 
     <%--swal弹框--%>
     <script src="${pageContext.request.contextPath}/js/sweetalert.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/validate.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/sweetalert.css">
 
 </head>

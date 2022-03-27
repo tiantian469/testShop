@@ -56,6 +56,8 @@ limitations under the License
     <script src="${pageContext.request.contextPath}/js/information.js"></script>
     <script src="${pageContext.request.contextPath}/js/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/sweetalert.css">
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/validate.js"></script>
     <style>
         #view-source {
             position: fixed;
