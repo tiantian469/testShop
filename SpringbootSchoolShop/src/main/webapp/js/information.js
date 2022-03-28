@@ -1,7 +1,25 @@
 $(document).ready(function(){
+    $("#update-form").validate({
+        rules:{//校验规则关键字
+            email:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                required:true,//是否必须填写
+            },
+            telephone:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                required:true,//是否必须填写
+            }
+        },
+        messages:{//校验不通过时的提示信息
+            email:{//与规则里面的名称对应
+                required:"邮箱输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+            },
+            telephone:{//与规则里面的名称对应
+                required:"手机号输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+            }
+        }
+    });
     var oldPswflag=0;
     var newPswflag=0;
-    $("#name").text($("#nameVal").text());
+    $("#name").val($("#nameVal").text());
     $("#email").val($("#emailVal").text());
     $("#telephone").val($("#telephoneVal").text());
     $("#changeInfo").click(function(){
@@ -12,6 +30,12 @@ $(document).ready(function(){
 
 
     $("#saveInfo").click(function (){
+        if ($("#email").val() == ""){
+            alert("邮箱输入不能为空！")
+        }
+        if ($("#telephone").val() == ""){
+            alert("手机号输入不能为空！")
+        }
         var saveInfo={};
         saveInfo.name=$("#name").val();
         saveInfo.email=$("#email").val();

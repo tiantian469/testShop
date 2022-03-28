@@ -13,7 +13,7 @@
 
         <ul class="nav nav-pills">
             <c:if test="${empty sessionScope.user}">
-                <li><a href="${pageContext.request.contextPath}/login" style="color: #F22E00">请登录</a></li>
+                <li><a href="${pageContext.request.contextPath}/login" style="color: #F22E00">登录</a></li>
             </c:if>
             <c:if test="${!empty sessionScope.user}">
                 <li class="info-a">

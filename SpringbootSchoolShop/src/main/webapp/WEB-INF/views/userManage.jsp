@@ -26,6 +26,8 @@
 
     <%--swal弹框--%>
     <script src="${pageContext.request.contextPath}/js/sweetalert.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/validate.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/sweetalert.css">
 
 </head>
@@ -57,7 +59,6 @@
                             <td><a href="" class="white-text templatemo-sort-by">用户名<span class="caret"></span></a></td>
                             <td><a href="" class="white-text templatemo-sort-by">Email<span class="caret"></span></a></td>
                             <td><a href="" class="white-text templatemo-sort-by">联系电话<span class="caret"></span></a></td>
-                            <td>删除</td>
                         </tr>
                         </thead>
                         <tbody>

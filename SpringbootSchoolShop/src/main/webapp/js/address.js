@@ -14,6 +14,42 @@ $(document).ready(function (){
 
 
     $("#saveAddr").click(function (){
+        $("#update-form").validate({
+            rules:{//校验规则关键字
+                detailaddress:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                    required:true,//是否必须填写
+                },
+                name:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                    required:true,//是否必须填写
+                },
+                telephone:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                    required:true,//是否必须填写
+                }
+            },
+            messages:{//校验不通过时的提示信息
+                detailaddress:{//与规则里面的名称对应
+                    required:"详细地址输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+                },
+                name:{//与规则里面的名称对应
+                    required:"收货人输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+                },
+                telephone:{//与规则里面的名称对应
+                    required:"手机号输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+                }
+            }
+        });
+        if ($("#detailaddress").val() == ""){
+            alert("详细地址输入不能为空！")
+            return false;
+        }
+        if ($("#name").val() == ""){
+           alert("收货人输入不能为空！")
+            return false;
+        }
+        if ($("#telephone").val() == ""){
+            alert("手机号输入不能为空！")
+            return false;
+        }
         var saveAddr={};
         saveAddr.addressid=addresId;
          saveAddr.province=$("#provinceUpdate").val();
@@ -77,6 +113,42 @@ $(document).ready(function (){
     });
 
     $("#insertAddr").click(function (){
+        $("#insert-form").validate({
+            rules:{//校验规则关键字
+                detailaddressInsert:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                    required:true,//是否必须填写
+                },
+                nameInsert:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                    required:true,//是否必须填写
+                },
+                telephoneInsert:{//需要校验的输入框名称（注意：输入框只能通过其name属性获得，无法通过ID等方式获得）
+                    required:true,//是否必须填写
+                }
+            },
+            messages:{//校验不通过时的提示信息
+                detailaddressInsert:{//与规则里面的名称对应
+                    required:"详细地址输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+                },
+                nameInsert:{//与规则里面的名称对应
+                    required:"收货人输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+                },
+                telephoneInsert:{//与规则里面的名称对应
+                    required:"手机号输入不能为空！",//校验不通过的提示信息（这里是必填而未填的提示信息）
+                }
+            }
+        });
+        if ($("#detailaddressInsert").val() == ""){
+            alert("详细地址输入不能为空！")
+            return false;
+        }
+        if ($("#nameInsert").val() == ""){
+            alert("收货人输入不能为空！")
+            return false;
+        }
+        if ($("#telephoneInsert").val() == ""){
+            alert("手机号输入不能为空！")
+            return false;
+        }
         var insertAddr={};
         insertAddr.addressid={};
         insertAddr.userid={};
