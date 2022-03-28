@@ -72,6 +72,6 @@
     </form>
 </div>
 
-<div class="button">欢迎加入软通动力大家庭，让我们共同进步</div>
+<div class="button"></div>
 </body>
 </html>

@@ -174,7 +174,7 @@
                 </div>
             </div>
             <footer class="text-right">
-                <div class="button">欢迎加入软通动力大家庭，让我们共同进步</div>
+                <div class="button"></div>
                 <p>Copyright &copy; 2019 Company Name
                     | Designed by <a href="http://www.templatemo.com" target="_parent">启飞1组所有小伙伴</a></p>
             </footer>
