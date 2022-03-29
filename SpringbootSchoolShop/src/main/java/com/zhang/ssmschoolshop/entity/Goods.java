@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.List;
 
 public class Goods {
+    private Integer pm;
+
     private Integer goodsid;
 
     private String goodsname;
@@ -29,6 +31,14 @@ public class Goods {
     private Activity activity;
 
     private Float newPrice;
+
+    public Integer getPm() {
+        return pm;
+    }
+
+    public void setPm(Integer pm) {
+        this.pm = pm;
+    }
 
     public Integer getGoodsid() {
         return goodsid;

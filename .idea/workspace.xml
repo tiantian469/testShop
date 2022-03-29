@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b183929f-2082-485b-85c9-f94d406b2a7f" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c0f3aa3-7462-4623-a7a3-e203246c572b/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6c0f3aa3-7462-4623-a7a3-e203246c572b/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/java/com/zhang/ssmschoolshop/entity/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/java/com/zhang/ssmschoolshop/entity/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/adminOrderComplete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/adminOrderComplete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/adminOrderReceive.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/adminOrderReceive.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/shopcart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/js/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/js/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/js/shopcart.js" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/js/shopcart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -390,7 +397,8 @@
       <workItem from="1648440348187" duration="418000" />
       <workItem from="1648453030393" duration="2624000" />
       <workItem from="1648517332962" duration="608000" />
-      <workItem from="1648519818430" duration="1580000" />
+      <workItem from="1648519818430" duration="2183000" />
+      <workItem from="1648522036803" duration="6657000" />
     </task>
     <task id="LOCAL-00001" summary="V1.2增加新功能特性">
       <created>1627105452192</created>
@@ -469,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648440716344</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1">
+      <created>1648521621111</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648521621111</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

@@ -1,9 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: zhangxin
-  Date: 2019/5/13
-  Time: 15:45
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -159,14 +153,14 @@
                 </div>
                 <ul class="pagination">
                     <li>
-                        <a href="${pageContext.request.contextPath}/admin/order/send?page=1" aria-label="Next">
+                        <a href="${pageContext.request.contextPath}/admin/order/receiver?page=1" aria-label="Next">
                             <span aria-hidden="true">首页</span>
                         </a>
                     </li>
 
                     <c:if test="${pageInfo.hasPreviousPage}">
                         <li>
-                            <a href="${pageContext.request.contextPath}/admin/order/send?page=${pageInfo.pageNum - 1}" aria-label="Previous">
+                            <a href="${pageContext.request.contextPath}/admin/order/receiver?page=${pageInfo.pageNum - 1}" aria-label="Previous">
                                 <span aria-hidden="true"><i class="fa fa-backward"></i></span>
                             </a>
                         </li>
@@ -174,22 +168,22 @@
 
                     <c:forEach items="${pageInfo.navigatepageNums}" var="pageNums">
                         <c:if test="${pageNums == pageInfo.pageNum}">
-                            <li class="active"><a href="${pageContext.request.contextPath}/admin/order/send?page=${pageNums}">${pageNums}</a></li>
+                            <li class="active"><a href="${pageContext.request.contextPath}/admin/order/receiver?page=${pageNums}">${pageNums}</a></li>
                         </c:if>
                         <c:if test="${pageNums != pageInfo.pageNum}">
-                            <li><a href="${pageContext.request.contextPath}/admin/order/send?page=${pageNums}">${pageNums}</a></li>
+                            <li><a href="${pageContext.request.contextPath}/admin/order/receiver?page=${pageNums}">${pageNums}</a></li>
                         </c:if>
                     </c:forEach>
 
                     <c:if test="${pageInfo.hasNextPage}">
                         <li>
-                            <a href="${pageContext.request.contextPath}/admin/order/send?page=${pageInfo.pageNum + 1}" aria-label="Next">
+                            <a href="${pageContext.request.contextPath}/admin/order/receiver?page=${pageInfo.pageNum + 1}" aria-label="Next">
                                 <span aria-hidden="true"><i class="fa fa-forward"></i></span>
                             </a>
                         </li>
                     </c:if>
                     <li>
-                        <a href="${pageContext.request.contextPath}/admin/order/send?page=${pageInfo.pages}" aria-label="Next">
+                        <a href="${pageContext.request.contextPath}/admin/order/receiver?page=${pageInfo.pages}" aria-label="Next">
                             <span aria-hidden="true">末页</span>
                         </a>
                     </li>

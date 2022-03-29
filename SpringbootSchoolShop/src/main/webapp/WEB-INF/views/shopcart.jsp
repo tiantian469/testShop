@@ -14,6 +14,7 @@
     <script src="${pageContext.request.contextPath}/js/sort.js"></script>
     <script src="${pageContext.request.contextPath}/js/holder.js"></script>
     <script src="${pageContext.request.contextPath}/js/shopcart.js"></script>
+    <script src="${pageContext.request.contextPath}/js/order.js"></script>
     <script src="${pageContext.request.contextPath}/js/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/sweetalert.css">
     <!-- 	<script>
