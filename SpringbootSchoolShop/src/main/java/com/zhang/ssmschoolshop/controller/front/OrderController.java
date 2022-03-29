@@ -85,7 +85,7 @@ public class OrderController {
             //处理折扣信息
             //如果商品折扣不为1
             if (activity.getDiscount() != 1) {
-                goods.setNewPrice(goods.getPrice() * goods.getNum() * activity.getDiscount());
+                goods.setNewPrice(goods.getPrice() * goods.getNum() * activity.getDiscount() / 10);
                 System.out.println("价格为：" + goods.getPrice() * goods.getNum() * activity.getDiscount());
             } else if (activity.getFullnum() != null) {
                 System.out.println("进入第二层方法");

@@ -13,17 +13,17 @@
 
         <ul class="nav nav-pills">
             <c:if test="${empty sessionScope.user}">
-                <li><a href="${pageContext.request.contextPath}/login" style="color: #F22E00">登录</a></li>
+                <li><a href="${pageContext.request.contextPath}/login">登录</a></li>
             </c:if>
             <c:if test="${!empty sessionScope.user}">
                 <li class="info-a">
-                    <a href="${pageContext.request.contextPath}/information" style="color: #F22E00">
+                    <a href="${pageContext.request.contextPath}/information">
                         ${sessionScope.user.username}
                     <span class="glyphicon glyphicon-triangle-bottom" style="font-size: 5px;margin-left: 7px;" aria-hidden="true">
                     </span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="${pageContext.request.contextPath}/information">账户管理</a></li>
+                        <li><a href="${pageContext.request.contextPath}/information" class="login-out">账户管理</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="${pageContext.request.contextPath}/logout" class="login-out">退出登录</a></li>
                     </ul>
@@ -73,7 +73,7 @@
                             class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="${pageContext.request.contextPath}/info/address">地址管理</a></li>
-                            <li><a href="${pageContext.request.contextPath}/order">交易中</a></li>
+                            <li><a href="${pageContext.request.contextPath}">交易中</a></li>
                             <li role="separator" class="divider"></li>
                         </ul></li>--%>
                 </ul>
