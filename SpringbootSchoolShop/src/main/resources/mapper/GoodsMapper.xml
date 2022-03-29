@@ -84,7 +84,7 @@
     <if test="distinct">
       distinct
     </if>
-    (@rownum:=@rownum+1) as pm,
+    @rownum:= @rownum+1 as pm,
     <include refid="Base_Column_List" />
     ,
     <include refid="Blob_Column_List" />
@@ -95,6 +95,7 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
+,(select @rownum := 0) as t
   </select>
 
   <select id="selectByExampleWithBLOBsLimit" parameterType="com.zhang.ssmschoolshop.entity.GoodsExample" resultMap="ResultMapWithBLOBs">

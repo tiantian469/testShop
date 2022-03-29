@@ -215,6 +215,7 @@ function build_goods_table(path,result) {
     var goods = result.info.pageInfo.list;
     $.each(goods, function (index,item) {
         var goodsid = $("<td></td>").append(item.goodsid);
+        var pm = $("<td></td>").append(item.pm);
         var goodsname = $("<td></td>").append(item.goodsname);
         var price = $("<td></td>").append(item.price);
         var num = $("<td></td>").append(item.num);
@@ -249,7 +250,7 @@ function build_goods_table(path,result) {
         var editTd = $("<td></td>").append(editBtn);
         var deleteTd = $("<td></td>").append(deleteBtn);
 
-        $("<tr></tr>").append(goodsid).append(goodsname).append(price).append(num).append(detailcate).append(activityid).append(desTd).append(detailTd).append(editTd).append(deleteTd).append(actTd).appendTo("#goodsinfo tbody");
+        $("<tr></tr>").append(pm).append(goodsname).append(price).append(num).append(detailcate).append(activityid).append(desTd).append(detailTd).append(editTd).append(deleteTd).append(actTd).appendTo("#goodsinfo tbody");
     })
 }
 
