@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b183929f-2082-485b-85c9-f94d406b2a7f" name="Default Changelist" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c0f3aa3-7462-4623-a7a3-e203246c572b/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6c0f3aa3-7462-4623-a7a3-e203246c572b/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/adminAllGoods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/WEB-INF/views/adminAllGoods.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/js/goodsManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/SpringbootSchoolShop/src/main/webapp/js/goodsManage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -393,7 +391,8 @@
       <workItem from="1648517332962" duration="608000" />
       <workItem from="1648519818430" duration="2183000" />
       <workItem from="1648522036803" duration="6820000" />
-      <workItem from="1648531990150" duration="9945000" />
+      <workItem from="1648531990150" duration="12052000" />
+      <workItem from="1648621047051" duration="3570000" />
     </task>
     <task id="LOCAL-00001" summary="V1.2增加新功能特性">
       <created>1627105452192</created>
@@ -486,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648529210540</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1">
+      <created>1648546085657</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648546085657</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
